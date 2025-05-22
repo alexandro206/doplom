@@ -1,0 +1,538 @@
+*{
+    font-family: 'Comfortaa', cursive;
+}
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #5c5b5b;
+}
+body {
+    background: #f6f6f6;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+input {
+    padding: 10px 12px;
+    display: block;
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #ececec;
+    line-height: 1.5rem;
+    color: #444444;
+    font-size: 1rem;
+}
+/*
+        HEADER
+ */
+header {
+    background: #008484;
+    height: 70px;
+}
+header *{
+    color: #ffffff;
+}
+header h1 {
+    margin-top: 13px;
+}
+header h1 a:hover{
+    color: #ffffff;
+}
+header ul {
+    margin-top: 20px;
+    padding: 0;
+    list-style-type: none;
+    float: right;
+}
+header ul li {
+    float: left;
+    position: relative;
+}
+header ul li a {
+  display: compact;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 20px;
+}
+header ul li a:hover {
+    background: #006669;
+    transition: 0.5s;
+    color: #ffffff;
+}
+header ul li ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 180px;
+    display: none;
+    z-index: 88888;
+    margin-top: -21px;
+}
+header ul li:hover ul {
+    display: block;
+}
+header ul li ul li {
+    width: 100%;
+    text-align: left;
+    margin: 0;
+}
+header ul li ul li a {
+    padding: 10px 15px;
+    display: block;
+    color: #008484;
+    background: white;
+}
+header ul li ul li a:hover {
+    background-color: #006669; /* Изменение фона при наведении */
+}
+header ul li ul:hover {
+    display: block; /* Держим меню открытым при наведении на него */
+}
+/*
+SLIDER
+ */
+.slider-title {
+    text-align: center;
+    padding: 30px 0;
+}
+.carousel {
+    height: 400px;
+}
+.carousel-inner, .carousel-item {
+    height: 400px;
+    border-radius: 10px;
+}
+.carousel-caption h5 {
+    font-size: 2rem;
+    font-weight: 500;
+    background: #000000;
+    max-width: 100%;
+    padding: 0.3em;
+    opacity: 0.5;
+}
+.carousel-caption-hack {
+    position: absolute;
+    right: 0%;
+    bottom: 0.05rem;
+    left: 0%;
+    padding-top: 1.25rem;
+    padding-bottom: 0rem;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+}
+.carousel-caption h5 a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+}
+.carousel-caption h5 a:hover {
+    text-decoration: underline;
+}
+/*
+        MAIN
+ */
+.main-content h2 {
+    margin: 15px 0;
+}
+.main-content .post {
+    margin-bottom: 30px;
+}
+.main-content .post_text {
+    background: #ffffff;
+    padding: 8px;
+    border-radius: 3px;
+}
+.main-content .post_text h3 {
+    margin: 7px 0;
+}
+.main-content .post_text h3 a:hover {
+    text-decoration: underline;
+    color: #5c5b5b;
+}
+.main-content .post_text i {
+    margin: 0px 5px 5px 0px;
+}
+.post {
+    margin-bottom: 30px;
+    background-color: #f9f9f9; /* Цвет фона */
+    border-radius: 8px; /* Скругление углов */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+    padding: 15px;
+}
+.img img {
+    width: 90%; /* Изображение занимает всю ширину контейнера */
+    height: 200px; /* Сохраняет пропорции */
+    border-radius: 5px; /* Скругление изображения */
+}
+.post_text {
+    padding-left: 15px;
+}
+
+.post_text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.post_text h3 a {
+    text-decoration: none; /* Убираем подчёркивание */
+    color: #333; /* Цвет текста */
+    transition: color 0.3s ease; /* Эффект при наведении */
+}
+
+.post_text h3 a:hover {
+    color: #007bff; /* Цвет текста при наведении */
+}
+.post_meta {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.post_meta i {
+    margin-right: 15px; /* Отступ между иконками */
+}
+
+.post_text p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+/*
+        Sidebar
+ */
+.search {
+    margin-top: 20px;
+}
+.sidebar .section {
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 30px ;
+}
+.sidebar .topics ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-top: 1px solid #e0e0e0;
+}
+.sidebar .topics ul li a {
+    display: block;
+    padding: 15px 0px 15px 0px;
+    border-bottom: 1px solid #e0e0e0;
+    transition: all 0.3s;
+    text-decoration: none;
+    font-weight: 500;
+    color: #5c5b5b;
+    font-size: 1.2em;
+}
+.sidebar .topics ul li a:hover {
+    padding-left: 10px;
+    transition: all 0.3s;
+}
+/*
+        Footer
+ */
+.footer {
+    background: #303036;
+    color: #d3d3d3;
+    position: relative;
+}
+.footer .footer-section {
+    padding: 22px;
+}
+.footer h4, .footer h3 {
+    color: white;
+}
+.footer .about .contact span {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+.footer .about .socials a {
+    border: 1px solid gray;
+    width: 45px;
+    height: 41px;
+    padding-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3em;
+    border-radius: 5px;
+    transition: all .3s;
+    color: #ffffff;
+}
+.footer .about .socials a:hover {
+    border: 1px solid white;
+    color: white;
+    transition: all .3s;
+}
+.footer .links ul a {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    transition: all .3s;
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer .links ul a:hover {
+    color: white;
+    margin-left: 15px;
+    transition: all .3s;
+}
+.footer .contact-form .contact-input {
+    background: #272727;
+    color: #bebdbd;
+    margin-bottom: 10px;
+    line-height: 1.5rem;
+    padding: .9rem 1.4rem;
+    border: none;
+    width: 100%;
+}
+.footer .contact-form .contact-input:focus {
+    background: #1a1a1a;
+}
+.footer .contact-form .contact-btn {
+    float: right;
+    font-size: 1.1em;
+}
+.footer .footer-bottom {
+    background: #343a40;
+    color: #686868;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+}
+ /*
+        SINGLE_POST
+  */
+.single_post {
+    margin-bottom: 30px;
+}
+.single_post .info {
+    margin: 20px 0;
+}
+.single_post .info i {
+    display: inline-block;
+    margin-right: 20px;
+}
+.single_post a {
+    text-decoration: underline;
+}
+.single_post a:hover {
+    text-decoration: none;
+    color: #008489;
+}
+/* Обновленные стили для текста поста */
+.single_post_text {
+    font-family: 'Comfortaa', cursive;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: #333;
+    margin: 25px 0;
+}
+
+.single_post_text pre {
+    white-space: pre-wrap;       /* Сохраняет пробелы и переносы */
+    word-wrap: break-word;      /* Перенос длинных слов */
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 4px solid #008484;
+    font-family: monospace;
+    margin: 20px 0;
+}
+
+.single_post_text p {
+    margin-bottom: 1.5em;
+    text-align: justify;
+}
+
+.single_post_text ul,
+.single_post_text ol {
+    margin-bottom: 1.5em;
+    padding-left: 2em;
+}
+
+.single_post_text li {
+    margin-bottom: 0.5em;
+}
+
+.single_post_text h2,
+.single_post_text h3,
+.single_post_text h4 {
+    margin-top: 1.8em;
+    margin-bottom: 1em;
+    color: #008484;
+    font-weight: 700;
+}
+
+.single_post_text blockquote {
+    border-left: 4px solid #008484;
+    padding: 10px 20px;
+    margin: 20px 0;
+    background: #f8f9fa;
+    font-style: italic;
+    color: #555;
+}
+
+.single_post_text a {
+    color: #008484;
+    text-decoration: underline;
+}
+
+.single_post_text a:hover {
+    text-decoration: none;
+}
+
+.single_post_text img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    border-radius: 5px;
+}
+
+/* Сохраняем переносы строк */
+.single_post_text.with-linebreaks {
+    white-space: pre-line;
+}
+.single_post_text a {
+    color: #008484;
+    text-decoration: underline;
+    word-break: break-all;
+}
+
+.single_post_text a:hover {
+    color: #006666;
+    text-decoration: none;
+}
+
+/* Добавляем иконку внешней ссылки */
+.single_post_text a[href^="http"]:not([href*="<?= $_SERVER['HTTP_HOST'] ?>"])::after {
+    content: " ↗";
+    font-size: 0.8em;
+}
+/*
+        FORMS
+ */
+.reg_form h2 {
+    text-align: center;
+    margin: 30px 0;
+}
+.reg_form input {
+    height: 3.3rem;
+}
+.reg_form a {
+    font-size: 1.2em;
+    transition: all .3s;
+    color: #5c5b5b;
+    text-decoration: underline;
+    margin-left: 60px;
+}
+.reg_form a:hover {
+    margin-left: 55px;
+    transition: all .3s;
+}
+
+/*
+FORMS
+ */
+
+form div.err p{
+    color: red;
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+/*
+COMMENTS
+ */
+.all-comments{
+    padding-top: 3rem;
+}
+.all-comments h3{
+    margin-bottom: 2rem;
+}
+.all-comments .one-comment{
+    padding: 1rem;
+    border: 1px solid #008484;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+.all-comments .one-comment i{
+    margin: 0.3rem 0.6rem 0 0;
+    font-weight: 600;
+}
+.all-comments .one-comment span{
+    display: inline-flex;
+    margin: 0.5rem 1.5rem 1.5rem 0;
+    font-weight: 500;
+}
+
+/* Стили для изображений в постах */
+.single_post .img {
+    margin: 25px 0;
+    text-align: center;
+}
+
+.single_post .img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.single_post .img img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Стили для подписей к изображениям */
+.single_post .img-caption {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+    color: #666;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    .single_post .img img {
+        border-radius: 5px;
+    }
+}
+
+/* Эффект для изображений с тенью */
+.img-shadow {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Стиль для рамки */
+.img-border {
+    border: 5px solid #fff;
+    outline: 1px solid #eee;
+}
+
+/* Стиль для круглых изображений */
+.img-circle {
+    border-radius: 50%;
+}
+
+
+
+
+
